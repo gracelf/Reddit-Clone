@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Confirmation</h2>
+
+
+
+<a th:text="${link.title}" th:href="@{|${link.url}|}" target="_blank"></a>
+
+
+<p th:text=" 'Submitted by ' + ${link.userName}"></p>
+<p th:text="${link.date}"></p>
+
+<br/>
+<br/>
+
+<p><a href="/">Home Page</a></p>
+<p><a href="/add">Add another post</a></p>
+<p><a href="/search">Search by a publisher name</a></p>
+
+</body>
+</html>

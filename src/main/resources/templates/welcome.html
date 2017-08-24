@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to the reddit database!</h1>
+
+<br/>
+
+
+
+<p><a href="/add">Add a new post</a></p>
+<p><a href="/search">Search by a publisher name</a></p>
+<br/>
+
+<h2>Post listing</h2>
+<br/>
+
+
+<th:block th:each="link:${allLinks}">
+
+    <a th:text="${link.title}" th:href="@{|${link.url}|}" target="_blank"></a>
+
+    <p th:text=" 'Submitted by ' + ${link.userName}"></p>
+    <p th:text="${link.date}"></p>
+
+</th:block>
+
+
+
+
+<br/>
+<br/>
+
+<!--<table>-->
+    <!--<thead>-->
+    <!--<tr>-->
+        <!--<th>Id</th>-->
+        <!--<th>Title</th>-->
+        <!--<th>Link</th>-->
+        <!--<th>User name</th>-->
+        <!--<th>Date</th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<th:block th:each="link:${allLinks}">-->
+        <!--<tr>-->
+            <!--<p th:text="${link.id}"></p>-->
+            <!--<p th:text="${link.title}"></p>-->
+            <!--<p th:text="${link.url}"></p>-->
+            <!--<p th:text=" 'Submitted by' + ${link.userName}"></p>-->
+            <!--<p th:text="${link.date}"></p>-->
+        <!--</tr>-->
+    <!--</th:block>-->
+    <!--</tbody>-->
+
+<!--</table>-->
+
+</body>
+</html>

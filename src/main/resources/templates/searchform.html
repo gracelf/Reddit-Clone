@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Enter a publisher name you want to search: </h2>
+
+<form th:action="@{/searchbyname}" method="post">
+
+    <p>Name: <input required type="text" name="searchName"/></p>
+
+    <input type="submit" value="Submit" />
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Enter your post here:</h2>
+<form th:action="@{/process}" th:object="${link}" method="post">
+
+    <p>Title: <input required type="text" th:field="*{title}"/></p>
+    <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+
+    <p>URL: <input required type="text" th:field="*{url}"/></p>
+
+    <p>User Name: <input required type="text" th:field="*{userName}"/></p>
+
+    <input type="submit" value="Submit" />
+</form>
+
+
+
+
+</body>
+</html>
