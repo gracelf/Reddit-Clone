@@ -28,7 +28,7 @@ public class Link {
     private String userName;
 
 
-    private LocalDateTime date;
+    private Date date;
 
     public long getId() {
         return id;
@@ -62,11 +62,11 @@ public class Link {
         this.userName = userName;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

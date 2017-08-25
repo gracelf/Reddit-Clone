@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -24,12 +26,6 @@ public class HomeController {
     public String listContact(Model model)
     {
         Iterable<Link> allink= linkRepo.findAllByOrderByDateDesc();
-
-//       List<Link> allinkarr= (List<Link>) allink;
-//
-//       allinkarr.sort(Comparator.comparing(Link::getDate).reversed());
-
-
 
         model.addAttribute("allLinks", allink);
         return "welcome";
@@ -54,7 +50,7 @@ public class HomeController {
             return "linkform";
         }
 
-        LocalDateTime now = LocalDateTime.now();
+        Date now= new Date();
 
         link.setDate(now);
 

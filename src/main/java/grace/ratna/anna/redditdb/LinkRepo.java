@@ -6,8 +6,6 @@ import java.time.LocalDateTime;
 
 public interface LinkRepo extends CrudRepository<Link, Long> {
 
-    Iterable<Link> findAllByUserName(String partialString);
-
     Iterable<Link> findAllByOrderByDateDesc();
 
     Iterable<Link> findAllByUserNameOrderByDateDesc(String partialString);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" >
 <head>
     <meta charset="UTF-8"/>
     <title>Title</title>
@@ -24,7 +24,9 @@
     <a th:text="${link.title}" th:href="@{|${link.url}|}" target="_blank"></a>
 
     <p th:text=" 'Submitted by ' + ${link.userName}"></p>
-    <p th:text="${link.date}"></p>
+
+    <!--"${#temporals.format(link.date, 'dd-MM-yyyy HH:mm')}" would not work for LocalDateTime Instant class-->
+    <p th:text="${#dates.format(link.date, 'MMM dd, yyyy')}"></p>
 
 </th:block>
 
