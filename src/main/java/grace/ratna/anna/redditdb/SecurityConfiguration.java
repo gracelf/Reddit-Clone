@@ -16,6 +16,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         http
                 .authorizeRequests()
+                // all users can see the home page and templates without login
                 .antMatchers("/", "/css/**","/img/**", "/js/**", "/fonts/**").permitAll()
                 .anyRequest().authenticated()
                 .and()

@@ -8,13 +8,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Date;
-import java.util.List;
 
 @Controller
 public class HomeController {
@@ -65,6 +59,8 @@ public class HomeController {
         return "searchform";
     }
 
+
+    //to pass/save a string to model, @RequestParam is required
     @PostMapping("/searchbyname")
     public String searchbyname(@RequestParam("searchName") String searchName, Model model){
 
