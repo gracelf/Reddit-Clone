@@ -1,6 +1,6 @@
 # GroupWork ProjectReddit
 
-@author Ratna, Anne and Grace
+@author Ratna, Anna and Grace
 
 
 Reference and notes:
