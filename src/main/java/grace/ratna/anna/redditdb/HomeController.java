@@ -60,7 +60,7 @@ public class HomeController {
     }
 
 
-    //to pass/save a string to model, @RequestParam is required
+    //to accept a string from input in PostMapping, @RequestParam is required
     @PostMapping("/searchbyname")
     public String searchbyname(@RequestParam("searchName") String searchName, Model model){
 
