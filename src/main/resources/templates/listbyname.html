@@ -55,7 +55,7 @@
             <tr>
                 <td th:text="${link.id}"></td>
                 <td><a th:text="${link.title}" th:href="@{|${link.url}|}" target="_blank"></a></td>
-                <td th:text=" 'Submitted by' + ${link.userName}"></td>
+                <td th:text=" 'Submitted by ' + ${link.userName}"></td>
                 <td th:text="${#dates.format(link.date, 'MMM dd, yyyy')}"></td>
             </tr>
         </th:block>
