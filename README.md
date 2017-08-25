@@ -18,6 +18,7 @@ http://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/spring-mvc-req
 <a th:text="${link.title}" th:href="@{|${link.url}|}" target="_blank"></a>
 target="_blank" is for opening url in a new tab/window
 th:href="@{|${link.url}| for underlining the link and make it clickable
+https://stackoverflow.com/questions/4964130/target-blank-vs-target-new
 
 
 
