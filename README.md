@@ -1,6 +1,6 @@
 # GroupWork ProjectReddit
 
-@author Ratna, Anna and Grace
+@author Grace, Anna and Ratna
 
 
 Reference and notes:
@@ -20,8 +20,7 @@ target="_blank" is for opening url in a new tab/window
 th:href="@{|${link.url}| for underlining the link and make it clickable
 https://stackoverflow.com/questions/4964130/target-blank-vs-target-new
 
-
-
+4) @Requestparam
 
 
 
