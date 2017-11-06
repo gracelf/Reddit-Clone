@@ -1,7 +1,13 @@
-# GroupWork ProjectReddit
+# Reddit Group Project
+@author Grace(Project Manager), Anna and Ratna
 
-@author Grace, Anna and Ratna
+An application similar to Reddit, which allow user to:   
+1. Add a new posting.  
+2. List existing posting from database. 
+3. Search postings by keywords   
 
+Experience this app live on Heroku: https://reddit-clone-java.herokuapp.com
+Login with pre-created account-- username:user/password:password
 
 Reference and notes:
 
@@ -20,7 +26,7 @@ target="_blank" is for opening url in a new tab/window
 th:href="@{|${link.url}| for underlining the link and make it clickable
 https://stackoverflow.com/questions/4964130/target-blank-vs-target-new
 
-4) @Requestparam
+4) @Requestparam 
 
 
 
