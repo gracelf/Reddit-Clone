@@ -6,7 +6,8 @@ An application similar to Reddit, which allow user to:
 2. List existing posting from database. 
 3. Search postings by keywords   
 
-Experience this app live on Heroku: https://reddit-clone-java.herokuapp.com
+Experience this app live on Heroku: https://reddit-clone-java.herokuapp.com        
+
 Login with pre-created account-- username:user/password:password
 
 Reference and notes:
