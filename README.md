@@ -1,5 +1,4 @@
-# Reddit Group Project
-@author Grace(Project Manager), Anna and Ratna
+# Reddit Clone
 
 An application similar to Reddit, which allow user to:   
 1. Add a new posting.  
@@ -28,6 +27,7 @@ th:href="@{|${link.url}| for underlining the link and make it clickable
 https://stackoverflow.com/questions/4964130/target-blank-vs-target-new
 
 4) @Requestparam 
+To pass down a string variable input from HTML to @PostMapping 
 
 
 
