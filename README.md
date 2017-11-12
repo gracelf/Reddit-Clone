@@ -7,7 +7,7 @@ An application similar to Reddit, which allow user to:
 
 Experience this app live on Heroku: https://reddit-clone-java.herokuapp.com        
 
-Login with pre-created account-- username:user/password:password
+Login with pre-created account-- <b>Username:user/Password:password</b>
 
 Reference and notes:
 
